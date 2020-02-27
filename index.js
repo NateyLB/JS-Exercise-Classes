@@ -120,9 +120,9 @@ class Lambdasian {
     this.location = attributes.location;
   }
 
-  // speak(){
-  //   return ``
-  // }
+  speak(){
+    return `Hello my name is ${this.name}, I am from ${this.location}`
+  }
 }
 
 /*
