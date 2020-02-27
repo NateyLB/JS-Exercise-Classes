@@ -178,6 +178,17 @@ class Student extends Lambdasian {
     this.className = attributes.className;
     this.favSubjects = attributes.favSubjects;
   }
+
+  listSubjects(){
+    var string;
+    for(var i = 0; i < this.favSubjects.length; i++){
+      string += `${this.favSubjects[i]}, `
+    }
+  }
+
+  PRAssignment(subject){
+    return `${this.name} has submitted PR for ${subject}`;
+  }
 }
 
 /*
