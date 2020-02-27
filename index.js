@@ -214,6 +214,9 @@ class ProjectManager extends Instructor {
     this.gradClassName = attributes.gradClassName;
     this.favInstructor = attributes.favInstructor;
   }
+  standUp(channel){
+    return `${this.name} announces to ${channel}, @channel standy times!`;
+  }
 }
 
 /*
