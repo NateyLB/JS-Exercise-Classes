@@ -57,6 +57,10 @@ class Person {
   poop(){
     return this.stomach.length = 0;
   }
+
+  toString(){
+    return `${this.name}, ${this.age}`;
+  }
 }
 
 /*
