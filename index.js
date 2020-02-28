@@ -123,6 +123,11 @@ class Lambdasian {
   speak(){
     return `Hello my name is ${this.name}, I am from ${this.location}`
   }
+
+  randomGrade(){
+    return  Math.floor(Math.random() * 100);
+  }
+
 }
 
 /*
@@ -154,6 +159,7 @@ class Instructor extends Lambdasian{
   grade(student, subject){
     return `${student.name} receives a perfect scoreon ${subject}`;
   }
+
 }
 
 /*
@@ -194,6 +200,13 @@ class Student extends Lambdasian {
   sprintChallenge(subject){
     return `${this.name} has begun sprint challenge on ${subject}`;
   }
+
+  graduate(){
+    if(this.randomGrade() >= 70){
+      return `this.`
+    }
+  }
+
 }
 
 /*
@@ -232,19 +245,6 @@ class ProjectManager extends Instructor {
       + This method, when called, will check the grade of the student and see if they're ready to graduate from Lambda School
       + If the student's grade is above a 70% let them graduate! Otherwise go back to grading their assignments to increase their score.
 */
-
-class Student extends Instructor{
-  constructor(grade){
-    super(grade);
-    this.grade = Math.random(101);
-  }
-  graduate(){
-    if(this.grade >= 70){
-      return ``
-    }
-  }
-}
-
 
 ///////// END OF CHALLENGE /////////
 ///////// END OF CHALLENGE /////////
